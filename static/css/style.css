@@ -1,0 +1,96 @@
+/* static/css/style.css */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f4f1; /* Light blue background for a fresh feel */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: #0077cc; /* Vibrant blue for header */
+    color: #ff8500; /* Orange for text, providing high contrast */
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: 3px solid #ff8500; /* Orange border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+#signup-form {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #0077cc; /* Blue border for inputs */
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff8500; /* Orange focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc; /* Blue background for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #ff8500; /* Orange background on hover */
+    color: #ffffff; /* White text on hover for better readability */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    animation: appear 1s ease forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
